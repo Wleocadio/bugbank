@@ -1,0 +1,27 @@
+{
+  "name": "bugbank",
+  "version": "1.0.0",
+  "description": "Testando o Bugbank com Cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Wleocadio/bugbank.git"
+  },
+  "keywords": [
+    "Cypress",
+    "Bugbank"
+  ],
+  "author": "Wellington Leocádio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wleocadio/bugbank/issues"
+  },
+  "homepage": "https://github.com/Wleocadio/bugbank#readme",
+  "dependencies": {
+    "cucumber": "^6.0.7",
+    "cypress": "^10.4.0"
+  }
+}
