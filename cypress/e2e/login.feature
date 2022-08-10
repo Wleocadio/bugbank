@@ -2,25 +2,25 @@
 
 Funcionalidade: Login
     Como um cliente
-    Quero acessar o site
-    Para fazer meu cadastro no banco
+    Quero acessar o site https://bugbank.netlify.app/
+    Para acessar meu usuário no banco BugBank
 
 Cenario: Login Inválido
-  Dado que o usuário está no site da BugBank
+  Dado que o cliente está no site da BugBank
   Quando tenta acessar o sistema com  usuário e senha inválidos
-  Entao deve visualizar uma mensagem de alerta
+  Entao deve visualizar a mensagem "É campo obrigátorio"
 
-|Usuario | Senha |
-|        | 123   |
-|123     |       |
-|        |       |
-|123     | 123   |
+|Email              |Senha    |
+|                   |bug123   |
+|bugemail.mail.com  |         |
+|                   |         |
+|bugemail.mail.com  |bug123   |
       
 
 Cenario: Login Válido
-  Dado que o usuário está no site da BugBank
+  Dado que o cliente está no site da BugBank
   Quando tenta fazer o login com usuario e senha válidos
   Entao consegue acessar o seu painel
 
-|Usuario | Senha |
-|Java    |Bug123 |
+|Email              |Senha    |
+|bugemail.mail.com  |bug123   |
