@@ -7,7 +7,20 @@ Funcionalidade: Login
 
 Cenario: Login Inválido
   Dado que o usuário está no site da BugBank
-  Quando Tenta acessar o sistema sem digitar usuário e senha válidos
-  Entao deve visualizar uma mensagem de campos obrigatórios
- 
- 
+  Quando tenta acessar o sistema com  usuário e senha inválidos
+  Entao deve visualizar uma mensagem de alerta
+
+|Usuario | Senha |
+|        | 123   |
+|123     |       |
+|        |       |
+|123     | 123   |
+      
+
+Cenario: Login Válido
+  Dado que o usuário está no site da BugBank
+  Quando tenta fazer o login com usuario e senha válidos
+  Entao consegue acessar o seu painel
+
+|Usuario | Senha |
+|Java    |Bug123 |
