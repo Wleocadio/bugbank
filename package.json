@@ -22,6 +22,6 @@
   "homepage": "https://github.com/Wleocadio/bugbank#readme",
   "dependencies": {
     "cucumber": "^6.0.7",
-    "cypress": "^10.4.0"
+    "cypress": "^10.11.0"
   }
 }
