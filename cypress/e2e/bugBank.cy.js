@@ -19,7 +19,7 @@ describe('empty spec', () => {
 
   });
 
-  it.only('Login com Sucesso', () => {
+  it('Login com Sucesso', () => {
     Login.acessarLogin()
     Login.realizerLogin()
     Login.validaLogin()
