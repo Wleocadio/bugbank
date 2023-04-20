@@ -14,23 +14,20 @@ permissions:
   contents: read
 
 jobs:
-  test:
-
+  
+  cypress-run: 
     runs-on: ubuntu-latest
-
+    container: cypress/browsers:node18.16.0-chrome107-ff107
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-   
-          
-    - name: Install NPM
-      run: npm install
-
-    - name: Install dependencies
-      run:
-          npm install cypress
-      
-
-    - name: Execute test
-      run:
-          npx cypress run 
+      - name: Checkout
+        uses: actions/checkout@v3
+      # Install NPM dependencies, cache them correctly
+      # and run all Cypress test
+      - name: cypress run 
+        uses: cypress-io/github-action@v3
+  
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v3
+        with: 
+          name: videos
+          path: cypress/videos
